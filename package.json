@@ -1,7 +1,7 @@
 {
     "name": "bookstore",
     "version": "0.1.0",
-    "description": "Simple Tech Bookstore",
+    "description": "A new book store",
     "author": "Bayurzx",
     "main": "index.js",
     "scripts": {
@@ -21,8 +21,7 @@
         "express-messages": "^1.0.1",
         "kraken-js": "^2.0.0",
         "makara": "^2.1.0",
-        "mongodb": "^3.6.2",
-        "mongoose": "^5.10.7",
+        "mongoose": "^5.10.8",
         "requirejs": "^2.3.6"
     },
     "devDependencies": {

@@ -1,6 +1,6 @@
 {
   "name": "bookstore",
-  "description": "Simple Tech Bookstore",
+  "description": "A new book store",
   "main": "index.js",
   "author": "Bayurzx",
   "moduleType": [

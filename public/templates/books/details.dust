@@ -19,7 +19,11 @@
       <br>
       <p class="description">{book.description}</p>
       <br>
-      <a href="/books/details/1" class="button small success">Book Details</a>
+
+      <form class="" action="/cart/{book._id}" method="post">
+        <input type="submit" name="" value="Add to Cart" class="button success">
+        <input type="hidden" name="{_csrf}" value="_csrf">
+      </form>
 
     </div>
 {/body}

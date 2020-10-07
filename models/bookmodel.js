@@ -8,6 +8,7 @@ var bookModel = function(){
     category:String,
     description:String,
     author:String,
+    publisher: String,
     price:Number,
     cover:String,
   });
@@ -16,6 +17,8 @@ var bookModel = function(){
   bookSchema.methods.truncTxt = function(len){
     return this.description.substring(0, len);
   }
+  //shorten text
+
   return mongoose.model('Book', bookSchema);
 }
 

@@ -1,2 +1,6 @@
 {>"layouts/manage" /}
-MANAGE INDEX
+
+{<body}
+  <h2>Manage</h2>
+  <p>This is the paragraph</p>
+{/body}

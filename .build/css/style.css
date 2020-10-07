@@ -36,3 +36,9 @@ ul,li{
 p.description{
   text-align: justify;
 }
+
+span.plus{
+  color: #fff;
+  font-size: 16px;
+  vertical-align: bottom;
+}

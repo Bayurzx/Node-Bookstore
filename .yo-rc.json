@@ -2,7 +2,7 @@
   "generator-kraken": {
     "taskModule": "grunt",
     "lintModule": "eslint",
-    "description": "Simple Tech Bookstore",
+    "description": "A new book store",
     "author": "Bayurzx",
     "templateModule": "makara",
     "i18n": "i18n",
