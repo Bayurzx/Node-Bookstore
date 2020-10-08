@@ -27,9 +27,12 @@ app.use(kraken(options));
 
 //connect flash middleware
 app.use(flash());
-app.use(function (req, res, next){
-  res.locals.messages = require('express-messages')(req, res);
-  next();
+app.use(function (req, res, next) {
+    var messages = require('express-messages')(req, res);
+    res.locals.messages = function (chunk, context, bodies, params) {
+        return chunk.write(messages());
+    };
+    next();
 });
 //connect flash middleware ends
 

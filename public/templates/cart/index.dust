@@ -6,7 +6,12 @@
 {<body}
 	<div class="row">
 	<div class="large-12 columns">
-	<h2>Shopping Cart <span><a href="/cart/remove">Empty Cart</a></span></h2>
+	<h2>Shopping Cart </h2> <br><br>
+	{^cart.items}
+	{:else}
+	<h3><span><a class="button alert" href="/cart/remove">Empty Cart</a></span></h3>
+	{/cart.items}
+
 	{?cart.items}
 		<table>
 		  <thead>
@@ -14,14 +19,14 @@
 		      <th width="650">Item</th>
 		      <th width="100">Quantity</th>
 		      <th width="100">Total</th>
-		      <th width="100"></th>				  
+		      <th width="100"></th>
 		  </thead>
-		  <tbody>			 
+		  <tbody>
 			  	{#cart.items}
 			  		<tr>
 				      <td><a href="books/details/{._id}">{.title}</a></td>
 				      <td>{.qty}</td>
-				      <td>${@math key="{.price}" method="multiply" operand="{.qty}" /}</td>
+				      <td>&#x20A6;{@math key="{.price}" method="multiply" operand="{.qty}" /}</td>
 				    </tr>
 			  	{/cart.items}
 		  </tbody>
@@ -34,7 +39,7 @@
 
 	<div class="row">
 		<div class="large-6 columns">
-			<h4>Total: <strong>${cart.total}</strong></h4>
+			<h4>Total: <strong>&#x20A6;{cart.total}</strong></h4>
 		</div>
 		<div class="large-6 columns">
 			<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
@@ -58,10 +63,10 @@
 				                <input type="hidden" name="return" value="http://localhost:8000">
 				                <!-- Cancel Return URL -->
 				                <input type="hidden" name="cancel_return" value="http://localhost:8000">
-				             			           
+
 				                <!-- Button -->
 				                <input type="image" src="https://www.paypalobjects.com/webstatic/en_US/btn/btn_buynow_107x26.png" name="submit" alt="Buy Now">
-				            </form> 
+				            </form>
 		</div>
 	</div>
 {/body}

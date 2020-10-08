@@ -2,15 +2,15 @@
 
 {<body}
   {#books}
-    <div class="large-3 columns book">
-      <img src="/img/{.cover}" alt="">
+    <div class="medium-3 columns book end margin">
+      <img class="crop" src="{.cover}" alt="">
       <h4>{.title}</h4>
       <p>{.truncTxt}</p>
       <div class="price">
         Buy it for <span> &#x20A6;{.price}</span>
       </div>
-      <br>
       <a href="/books/details/{._id}" class="button small primary">Book Details</a>
+      <div class="large-12 clearfix margin"></div>
     </div>
     {/books}
 {/body}

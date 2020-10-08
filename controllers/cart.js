@@ -21,6 +21,13 @@ module.exports = function(router){
 			cart: displayCart
 		});
 	});
+	//Empty the cart
+	router.get('/remove', function (req, res){
+		req.session.cart = {};
+		req.flash('success', 'Your cart was cleared successfully!')
+		res.location('/cart');
+		res.redirect('/cart');
+	})
 
 	router.post('/:id', function(req, res){
 		req.session.cart = req.session.cart || {};

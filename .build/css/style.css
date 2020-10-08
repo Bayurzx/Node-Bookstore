@@ -4,6 +4,7 @@
 
 .book{
   text-align: center;
+  margin: 10px;
 }
 
 .book h4{
@@ -21,6 +22,11 @@
   border: 1px #ccc solid;
   border-radius: 25%;
   color: Green;
+}
+
+div.price{
+  margin-top: 20px;
+
 }
 
 footer{
@@ -41,4 +47,51 @@ span.plus{
   color: #fff;
   font-size: 16px;
   vertical-align: bottom;
+}
+
+ul.success{
+  text-indent: none;
+  width: 600px;
+  text-align: center;
+  padding: 15px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #3c7634;
+  background-color: #dff0d8;
+  border-color: #343a40;
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul.error{
+  text-indent: none;
+  width: 600px;
+  text-align: center;
+  padding: 15px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #7f0000;
+  background-color: #ff77aa;
+  border-color: #343a40;
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+div #messages{
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  margin-top: 10px;
+}
+
+
+div.margin{
+  margin: 30px 0;
+}
+
+a.button.small.primary{
+  margin-top: 20px;
 }
