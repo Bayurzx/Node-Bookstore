@@ -5,9 +5,7 @@
     "author": "Bayurzx",
     "main": "index.js",
     "scripts": {
-        "test": "grunt test",
-        "build": "grunt build",
-        "all": "npm run build && npm run test"
+      "test": "echo \"No test specified\""
     },
     "dependencies": {
         "connect-flash": "^0.1.1",
